@@ -11,6 +11,4 @@ def beqa(request):
 def gvantsa(request):
     return HttpResponse("გამარჯობა გვანცა")
 def greet(request, name):
-    return render(request, "hello/greet.html", {
-        "name": name.capitalize()
-    })
+    return HttpResponse(f"Hello, {name.capitalize()}!")
